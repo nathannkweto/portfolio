@@ -1,6 +1,8 @@
 import React from 'react';
 import { RouterProvider } from 'react-router-dom';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { router } from './router';
+import theme from '../theme/theme';
 
 /**
  * App
@@ -11,10 +13,10 @@ import { router } from './router';
  */
 export const App: React.FC = () => {
   return (
-    /**
-     * RouterProvider injects the routing context into the entire application,
-     * allowing all child components to access navigation and route params
-     */
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      {/* CssBaseline kicksstart an elegant, consistent, and simple baseline to build upon. */}
+      <CssBaseline />
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 };
