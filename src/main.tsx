@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './app/App';
+import { ErrorBoundary } from './components/common/ErrorBoundary';
 
 /**
  * Application Entry Point
@@ -26,8 +27,10 @@ ReactDOM.createRoot(rootElement).render(
    * It does not affect production builds.
    */
   <React.StrictMode>
-    {/* App serves as the root component that contains global providers,
-        routing configuration, and application-level state. */}
-    <App />
+    <ErrorBoundary>
+      {/* App serves as the root component that contains global providers,
+          routing configuration, and application-level state. */}
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>,
 );
