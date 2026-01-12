@@ -3,9 +3,13 @@ import type { Profile } from '../types/profile';
 export const profile: Profile = {
   name: 'Nathan Nkweto',
   title: 'Junior Software Engineer',
-  tagline: 'Building scalable software solutions.',
+  tagline: 'Future-proof software development.',
   shortBio:
-    'I am a future-minded full stack engineer with special focus on backend architecture and developer tooling. I bridge the gap between complex real world processes and software solutions that allow businesses to retain performance while shifting into the digital era. My solutions ensure performance, scalability, and security.',
+    'I am a junior full stack developer with a strong foundation in modern development such as version' +
+    'control with Git, System architecture and Test-driven development. My primary focus is backend development' +
+    ' in Java and design of RESTful API that fit for microservice and monolithic types of applications.' +
+    ' I am currently freelancing and have worked on some small-scale projects previously while I keep learning ' +
+    'industry standards for software development.',
   socials: [
     {
       platform: 'github',
